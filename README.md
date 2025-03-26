@@ -20,4 +20,13 @@ def index():
     
     return '''
         <form method="post">
-            <label>Are you a gooner? <
+            <label>Are you a gooner? <input type="text" name="question1" required></label><br>
+            <label>Are you a sigma? <input type="text" name="question2" required></label><br>
+            <label>Who are you? <input type="text" name="question3" required></label><br>
+            <input type="submit" value="Submit">
+        </form>
+    '''
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
